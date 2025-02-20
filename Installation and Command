@@ -1,0 +1,31 @@
+Set Up Prerequisites
+Install Node.js (https://nodejs.org/en)
+Verify installation
+node -v
+npm -v
+Install Git
+https://git-scm.com/downloads
+Create a GitHub Account
+https://github.com/signup?source=login
+Create a New React Project
+npx create-react-app my-react-app
+
+Start the Development Server
+npm start
+
+Connect to GitHub
+Create a New Repository on GitHub
+Connect Your Local Repository to GitHub
+git init
+git remote add origin https://github.com/yourusername/my-react-app.git
+
+git add .
+git commit -m "Initial commit"
+
+git branch -M main
+git push -u origin main
+
+Update Changes
+git add .
+git commit -m "Updated features or changes"
+git push
