@@ -1,0 +1,266 @@
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+            header .logo img {
+                margin-left: 1rem;
+                width: 100px; /* Adjust the size as needed */
+                height: auto;
+            }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            nav ul li {
+                margin-right: 1rem;
+            }
+
+                nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+        .hero-banner {
+            text-align: center;
+            padding: 3rem;
+            color: #333;
+        }
+
+        .description {
+            width: 100%;
+            background-color: #f9f9f9;
+            padding: 2rem;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 1.2rem; /* Increase font size for better readability */
+        }
+
+            .description ul {
+                list-style-type: none;
+                margin: 0 auto;
+                padding: 0;
+                max-width: 800px;
+                text-align: left;
+            }
+
+                .description ul li {
+                    margin-bottom: 1rem;
+                    font-size: 1.2rem;
+                    display: flex;
+                    align-items: center;
+                }
+
+                    .description ul li:before {
+                        content: "👉"; /* Hand pointer icon */
+                        margin-right: 0.5rem;
+                        font-size: 1.5rem;
+                    }
+
+        .cta-section, .services-section {
+            padding: 2rem;
+        }
+
+            .cta-section h2, .services-section h2 {
+                text-align: left;
+                width: 100%;
+            }
+
+        .cta-block {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin: 1rem;
+            display: inline-block;
+            width: 30%;
+            box-sizing: border-box;
+        }
+
+            .cta-block img {
+                width: 100%;
+            }
+            .cta-icon-block img {
+                width: 30%;
+            }
+
+        .services-section-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem; /* Adjust gap to control spacing */
+            flex-wrap: wrap;
+        }
+
+        .service-item {
+            flex: 1;
+            min-width: 300px; /* Adjust min-width as needed */
+            box-sizing: border-box;
+        }
+
+        .service-block {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            height: 250px; /* Set a fixed height */
+            box-sizing: border-box;
+        }
+
+            .service-block img {
+                width: 30%;
+                margin-right: 1rem;
+            }
+
+            .service-block div {
+                text-align: left;
+                overflow: hidden; /* Ensure content fits within the block */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+
+            .service-block div {
+                text-align: left;
+            }
+
+            .service-block h3 {
+                margin-top: 0;
+            }
+
+        @media (max-width: 768px) {
+            .cta-block, .service-block {
+                width: 100%;
+                margin: 0.5rem 0;
+            }
+
+            .services-section-content {
+                flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            }
+
+            .service-block {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+                .service-block img {
+                    width: 100%;
+                    margin: 0 0 1rem;
+                }
+
+                .service-block div {
+                    width: 100%;
+                }
+        }
+
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .resume-download {
+            margin-left: auto;
+        }
+
+            .resume-download a {
+                color: white;
+                text-decoration: none;
+                margin-right: 1rem; /* Add space between the resume link and social icons */
+            }
+/*
+        .social-icons {
+            display: flex;
+            gap: 0.5rem;
+        }
+*/
+
+
+
+
+        .resume-download {
+            margin-left: auto;
+        }
+
+            .resume-download a {
+                color: white;
+                text-decoration: none;
+                margin-right: 1rem; /* Add space between the resume link and social icons */
+            }
+
+
+
+
+            .social-icons img {
+                width: 24px; /* Adjust the size as needed */
+                height: auto;
+            }
+
+
+        .contact-section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .contact-section-content {
+            display: flex;
+            justify-content: space-between; /* Ensures equal spacing between blocks */
+            gap: 1rem; /* Adjust gap to control spacing */
+            flex-wrap: wrap;
+        }
+
+        .contact-block {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin: 1rem 0;
+            width: 30%; /* Ensures three blocks fit in one row */
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+            .contact-block img {
+                width: 24px; /* Standard icon size */
+                height: 24px; /* Standard icon size */
+                margin-bottom: 0.5rem;
+            }
+
+            .contact-block a {
+                color: #007bff;
+                text-decoration: none;
+            }
+
+
