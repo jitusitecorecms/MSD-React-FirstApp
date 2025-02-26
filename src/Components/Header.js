@@ -1,10 +1,10 @@
 import React from "react";
-
+import logoImg from '../Images/Logo.png'
 const Header = () => {
   return (
     <header>
-    <div class="logo">
-        <img src="images/Logo.png" alt="Logo"></img>
+    <div className="logo">
+        <img src={logoImg} alt="Logo"></img>
     </div>
     <nav>
         <ul>
