@@ -1,14 +1,20 @@
-import React from "react";
-import homeImg from '../Images/Home page.png'
 
-const HeroBanner = () => {
+import React from "react";
+
+const HeroBanner = ({ heroBannerData }) => {
+  if (!heroBannerData) return <p>Loading...</p>;
+
+  const { image, link } = heroBannerData;
+
+
   return (
-          <a href="https://www.youtube.com/mysitecorediaries" target="_blank">
-            <div className="hero-banner">
-                <img src={homeImg} alt="Hero Banner" style={{width: "100%"}}></img>
-            </div>
+
+          <a href={link} target="_blank" rel="noopener noreferrer">
+          <div className="hero-banner">
+            <img src={image.src} alt={image.alt} style={{ width: "100%" }} />
+          </div>
           </a>
-  );
+        );
 };
 
 export default HeroBanner;

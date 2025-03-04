@@ -1,21 +1,32 @@
 import React from "react";
-import logoImg from '../Images/Logo.png'
-const Header = () => {
+
+const Header = ({ headerData }) => {
+  if (!headerData) return <p>Loading...</p>;
+
+  const { logo, navigation } = headerData;
+
   return (
     <header>
-    <div className="logo">
-        <img src={logoImg} alt="Logo"></img>
-    </div>
-    <nav>
+      <div className="logo">
+        <img src={logo} alt="Logo" />
+      </div>
+      <nav>
         <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#videos">Our Videos</a></li>
-            <li><a href="#services">Our Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="images/JItendra J Ghanekar - Resume.pdf" download="Jitendra J Ghanekar - Resume.pdf" target="_blank">Download Resume</a></li>
+          {navigation.map((navItem, index) => (
+            <li key={index}>
+              <a
+                href={navItem.href}
+                {...(navItem.download && { download: true })}
+                target={navItem.download ? "_blank" : "_self"}
+                rel={navItem.download ? "noopener noreferrer" : undefined}
+              >
+                {navItem.label}
+              </a>
+            </li>
+          ))}
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
   );
 };
 

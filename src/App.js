@@ -6,21 +6,21 @@ import Footer from "./Components/Footer";
 import HeroBanner from "./Components/HeroBanner";
 import Services from "./Components/Services";
 import Video from "./Components/Video";
-import  "./App.css";
+import "./App.css";
+import content from "./Data/homepage.json"; // Ensure this path is correct
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-     <Header />
-     <HeroBanner />
-      <Aboutus />
-    <Services />
-      <Video />
-     <Contact />
-     <Footer /> 
-
+      <Header headerData={content.header} />
+      <HeroBanner heroBannerData={content.heroBanner} />
+      <Aboutus aboutUsData={content.aboutUs} />
+      <Services servicesData ={content.services} />
+      <Video videosData={content.videos} />
+      <Contact contactData={content.contact} />
+      <Footer footerData={content.footer} />
     </div>
   );
-}
+};
 
 export default App;

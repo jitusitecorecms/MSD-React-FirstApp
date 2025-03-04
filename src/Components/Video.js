@@ -1,27 +1,24 @@
 import React from "react";
 
-const Video = () => {
+const Video = ({ videosData }) => { 
+    if (!videosData) return <p>Loading...</p>;
+    const { heading, list } = videosData;
+
+
   return (
             <section className="cta-section" id="videos">
-                <h2>Latest Videos</h2>
-                <a href="https://youtu.be/KuIUaeU38hM" target="_blank">
+                <h2>{heading}</h2>
+                {Array.isArray(list) && list.map((point, index) => (
+
+                    <a href={point.link} target="_blank" key={index}>
                     <div className="cta-block">
-                        <img src="https://img.youtube.com/vi/KuIUaeU38hM/maxresdefault.jpg" alt="Kickstart Your React Journey"></img>
-                        <p>Kickstart Your React Journey</p>
+                        <img src={point.thumbnail} alt={point.title}></img>
+                        <p>{point.title}</p>
                     </div>
-                </a>
-                <a href="https://youtu.be/BdR64q0zTQk" target="_blank">
-                    <div className="cta-block">
-                        <img src="https://img.youtube.com/vi/BdR64q0zTQk/maxresdefault.jpg" alt="Custom Form Submit Action"></img>
-                        <p>Custom Form Submit Action</p>
-                    </div>
-                </a>
-                <a href="https://youtu.be/Kms12WNw6YU" target="_blank">
-                    <div className="cta-block">
-                        <img src="https://img.youtube.com/vi/Kms12WNw6YU/maxresdefault.jpg" alt="Discover Optimizely"></img>
-                        <p>Discover Optimizely</p>
-                    </div>
-                </a>
+                    </a>
+
+                ))}
+
             </section>
         );
 };
