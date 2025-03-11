@@ -1,0 +1,130 @@
+{
+"content": {
+  "header": {
+      "logo": "Images/Logo.png",
+      "navigation": [
+          { "label": "About Us", "href": "#about" },
+          { "label": "Our Videos", "href": "#videos" },
+          { "label": "Our Services", "href": "#services" },
+          { "label": "Contact", "href": "#contact" },
+          { "label": "Download Resume", "href": "Images/JItendra J Ghanekar - Resume.pdf", "download": true }
+      ]
+  },
+  "heroBanner": {
+      "image": {
+          "src": "Images/Home page.png",
+          "alt": "Hero Banner Image"
+      },
+      "link": "https://www.youtube.com/mysitecorediaries"
+  },
+  "aboutUs": {
+      "title": "Welcome to My Sitecore Diaries - A Journey from Sitecore to DXP and Beyond!",
+      "description": "I am Jitendra Ghanekar, Sitecore Technology MVP 2024 and 3X Sitecore Certified professional. My channel is your go-to resource for mastering Sitecore and cutting-edge Digital Experience Platforms (DXP) technologies. Here you will discover valuable content designed to help you excel in your Sitecore journey:",
+      "points": [
+          "Comprehensive videos on Sitecore 10 certification exam questions.",
+          "Expert guidance on Sitecore interview questions.",
+          "Step-by-step tutorials for beginners to advance your Sitecore skills.",
+          "Insights into other technologies enhancing DXP.",
+          "Latest trends and best practices in .NET and beyond."
+      ]
+  },
+  "services": {
+      "heading": "Our Services",
+      "list": [
+          {
+              "id": 1,
+              "title": "Sitecore 360 Support",
+              "image": "Images/360.png",
+              "description": "A fully managed Sitecore solution covering the entire development lifecycle—from presales and PoCs to production deployment and continuous optimization. Ensuring best practices, scalability, and ongoing enhancements, making your Sitecore platform future-ready.",
+              "link": "#",
+              "linkText": "Learn More"
+          },
+          {
+              "id": 2,
+              "title": "Sitecore Academy & Practice Setup",
+              "image": "Images/Academy.png",
+              "description": "A full-service offering designed to help organizations train, recruit, and establish a Sitecore practice. We provide structured training programs, interview frameworks, and strategic guidance to build a strong Sitecore team from the ground up.",
+              "link": "#",
+              "linkText": "Learn More"
+          },
+          {
+              "id": 3,
+              "title": "Sitecore Expert Assist",
+              "image": "Images/Assist.png",
+              "description": "From simple troubleshooting to resolving complex Sitecore challenges, provide on-demand support and guidance. Also mentor your team, ensuring they gain the skills needed to tackle Sitecore issues independently over time.",
+              "link": "#",
+              "linkText": "Learn More"
+          },
+          {
+            "id": 4,
+            "title": "Sitecore Expert Assist 2",
+            "image": "Images/Assist.png",
+            "description": "From simple troubleshooting to resolving complex Sitecore challenges, provide on-demand support and guidance. Also mentor your team, ensuring they gain the skills needed to tackle Sitecore issues independently over time.",
+            "link": "#",
+            "linkText": "Learn More"
+        }
+      ]
+  },
+  "videos": {
+      "heading": "Latest Videos",
+      "list": [
+          {
+              "id": 1,
+              "title": "Kickstart Your React Journey",
+              "thumbnail": "https://img.youtube.com/vi/KuIUaeU38hM/maxresdefault.jpg",
+              "link": "https://youtu.be/KuIUaeU38hM"
+          },
+          {
+              "id": 2,
+              "title": "Custom Form Submit Action",
+              "thumbnail": "https://img.youtube.com/vi/BdR64q0zTQk/maxresdefault.jpg",
+              "link": "https://youtu.be/BdR64q0zTQk"
+          },
+          {
+              "id": 3,
+              "title": "Discover Optimizely",
+              "thumbnail": "https://img.youtube.com/vi/Kms12WNw6YU/maxresdefault.jpg",
+              "link": "https://youtu.be/Kms12WNw6YU"
+          },
+          {
+            "id": 3,
+            "title": "Discover Optimizely 2",
+            "thumbnail": "https://img.youtube.com/vi/Kms12WNw6YU/maxresdefault.jpg",
+            "link": "https://youtu.be/Kms12WNw6YU"
+        }
+      ]
+  },
+  "contact": {
+      "heading": "Contact",
+      "list": [
+          {
+              "id": 1,
+              "title": "Email",
+              "image": "/Images/envelope-icon.png",
+              "link": "mailto:your-email@example.com"
+          },
+          {
+              "id": 2,
+              "title": "My LinkedIn Profile",
+              "image": "/Images/linkedin-app-icon.png",
+              "link": "https://www.linkedin.com/in/mysitecorediaries"
+          },
+          {
+              "id": 3,
+              "title": "Download Resume",
+              "image": "/Images/resume-cv-icon.png",
+              "link": "images/JItendra J Ghanekar - Resume.pdf"
+          }
+      ]
+  },
+  "footer": {
+      "text": "© 2025 My Sitecore Diaries. All rights reserved.",
+      "socialLinks": [
+          { "platform": "YouTube", "link": "https://www.youtube.com/mysitecorediaries", "icon": "Images/youtube-color-icon.png" },
+          { "platform": "LinkedIn", "link": "https://www.linkedin.com/in/mysitecorediaries", "icon": "Images/linkedin-app-icon.png" },
+          { "platform": "Instagram", "link": "https://www.instagram.com/mysitecorediaries", "icon": "Images/ig-instagram-icon.png" },
+          { "platform": "Facebook", "link": "https://www.facebook.com/mysitecorediaries", "icon": "Images/facebook-round-color-icon.png" }
+      ]
+  }
+}
+}
