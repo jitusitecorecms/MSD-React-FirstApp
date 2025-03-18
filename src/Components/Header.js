@@ -1,4 +1,6 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 
 const Header = ({ headerData }) => {
   if (!headerData) return <p>Loading...</p>;
@@ -14,14 +16,14 @@ const Header = ({ headerData }) => {
         <ul>
           {navigation.map((navItem, index) => (
             <li key={index}>
-              <a
-                href={navItem.href}
+              <Link
+                to={navItem.href}
                 {...(navItem.download && { download: true })}
                 target={navItem.download ? "_blank" : "_self"}
                 rel={navItem.download ? "noopener noreferrer" : undefined}
               >
                 {navItem.label}
-              </a>
+              </Link> 
             </li>
           ))}
         </ul>
@@ -31,3 +33,14 @@ const Header = ({ headerData }) => {
 };
 
 export default Header;
+
+
+{/* <Link
+                to={navItem.href}
+                {...(navItem.download && { download: true })}
+                target={navItem.download ? "_blank" : "_self"}
+                rel={navItem.download ? "noopener noreferrer" : undefined}
+              >
+                {navItem.label}
+              </Link> */}
+

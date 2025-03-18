@@ -3,10 +3,10 @@
   "header": {
       "logo": "Images/Logo.png",
       "navigation": [
-          { "label": "About Us", "href": "#about" },
-          { "label": "Our Videos", "href": "#videos" },
-          { "label": "Our Services", "href": "#services" },
-          { "label": "Contact", "href": "#contact" },
+          { "label": "About Us", "href": "about" },
+          { "label": "Our Videos", "href": "videos" },
+          { "label": "Our Services", "href": "services" },
+          { "label": "Contact", "href": "contact" },
           { "label": "Download Resume", "href": "Images/JItendra J Ghanekar - Resume.pdf", "download": true }
       ]
   },
@@ -54,15 +54,7 @@
               "description": "From simple troubleshooting to resolving complex Sitecore challenges, provide on-demand support and guidance. Also mentor your team, ensuring they gain the skills needed to tackle Sitecore issues independently over time.",
               "link": "#",
               "linkText": "Learn More"
-          },
-          {
-            "id": 4,
-            "title": "Sitecore Expert Assist 2",
-            "image": "Images/Assist.png",
-            "description": "From simple troubleshooting to resolving complex Sitecore challenges, provide on-demand support and guidance. Also mentor your team, ensuring they gain the skills needed to tackle Sitecore issues independently over time.",
-            "link": "#",
-            "linkText": "Learn More"
-        }
+          }
       ]
   },
   "videos": {
@@ -85,13 +77,7 @@
               "title": "Discover Optimizely",
               "thumbnail": "https://img.youtube.com/vi/Kms12WNw6YU/maxresdefault.jpg",
               "link": "https://youtu.be/Kms12WNw6YU"
-          },
-          {
-            "id": 3,
-            "title": "Discover Optimizely 2",
-            "thumbnail": "https://img.youtube.com/vi/Kms12WNw6YU/maxresdefault.jpg",
-            "link": "https://youtu.be/Kms12WNw6YU"
-        }
+          }
       ]
   },
   "contact": {

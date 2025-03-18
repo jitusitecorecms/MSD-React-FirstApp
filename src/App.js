@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "./Components/Header";
-import Aboutus from "./Components/Aboutus";
-import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import HeroBanner from "./Components/HeroBanner";
-import Services from "./Components/Services";
-import Video from "./Components/Video";
+import AppRoutes from "./routes"; // ✅ Import the separate routes file
 import "./App.css";
 
 const App = () => {
@@ -33,20 +29,18 @@ const App = () => {
       });
   }, []);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p>Loading... App.JS</p>;
   if (error) return <p>Error: {error}</p>;
   if (!content) return <p>No data available</p>;
 
   return (
-    <div className="App">
-      <Header headerData={content.header} />
-      <HeroBanner heroBannerData={content.heroBanner} />
-      <Aboutus aboutUsData={content.aboutUs} />
-      <Services servicesData={content.services} />
-      <Video videosData={content.videos} />
-      <Contact contactData={content.contact} />
-      <Footer footerData={content.footer} />
-    </div>
+      <div className="App">
+        <Header headerData={content.header} />
+        <main>
+          <AppRoutes content={content} /> {/* ✅ Use the separate routes component */}
+        </main>
+        <Footer footerData={content.footer} />
+      </div>
   );
 };
 
@@ -55,4 +49,10 @@ export default App;
 
 // npm install -g json-server
 // json-server --watch db.json --port 5000
+
+{/* <HeroBanner heroBannerData={content.heroBanner} />
+      <Aboutus aboutUsData={content.aboutUs} />
+      <Services servicesData={content.services} />
+      <Video videosData={content.videos} />
+      <Contact contactData={content.contact} /> */}
 
